@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<div class="wrap page-head">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../guides.html">Guides</a> / <span>{{ page.cat }}</span></nav>
+ <span class="eyebrow">{{ page.cat }}</span>
+ <h1>{{ page.h1 }}</h1>
+ <p class="lede">{{ page.description }}</p>
+ <div class="byline"><span>By the App.Deals editorial team</span><span>Updated {{ page.updated }}</span><span>{{ page.read }} read</span></div>
+</div>
+<div class="wrap article-layout" style="padding-bottom:30px">
+ <article class="article" data-toc>
+  <nav class="toc" id="toc" hidden aria-label="On this page"><strong>On this page</strong></nav>
+  {{ content }}
+  <div class="notice v" style="margin-top:28px">Offers, prices and policies change. Treat figures here as examples and confirm current terms on the provider's official page. See <a href="../editorial-policy.html">how we research and list deals</a>.</div>
+ </article>
+ <aside>
+  <div class="card">
+   <h3>Get deal alerts</h3>
+   <p class="small muted">Pick your platforms and categories. We email you only when something worth your money turns up.</p>
+   <a class="btn primary" href="../alerts.html" style="width:100%">Set up alerts</a>
+  </div>
+  <div class="card">
+   <h3>Free tools</h3>
+   <ul style="padding-left:1.1em;margin:0">
+    <li><a href="../tools/subscription-audit.html">Subscription audit</a></li>
+    <li><a href="../tools/lifetime-deal-calculator.html">Lifetime deal calculator</a></li>
+    <li><a href="../tools/deal-checker.html">Deal checker</a></li>
+    <li><a href="../tools/annual-vs-monthly.html">Annual vs monthly</a></li>
+    <li><a href="../tools/perk-finder.html">Perk finder</a></li>
+   </ul>
+  </div>
+  <div class="card">
+   <h3>Make an app?</h3>
+   <p class="small muted">Put your launch discount in front of readers who are actively looking for apps.</p>
+   <a class="btn ghost sm" href="../submit-deal.html">Submit your deal</a>
+  </div>
+ </aside>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":{{ page.h1 | jsonify }},"description":{{ page.description | jsonify }},"dateModified":{{ page.iso | jsonify }},"author":{"@type":"Organization","name":"App.Deals"},"publisher":{"@type":"Organization","name":"App.Deals","url":"https://app.deals/"},"mainEntityOfPage":{{ page.canon | prepend: "https://app.deals/" | jsonify }}}</script>

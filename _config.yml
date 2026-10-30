@@ -1,0 +1,15 @@
+title: App.Deals
+description: Independent guide to software deals, student, startup and nonprofit perks, and free app alternatives.
+url: https://app.deals
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+exclude:
+  - _build
+  - _site
+  - README.md
+  - PROMPTS.md
+  - RESEARCH.md
+  - .gitignore

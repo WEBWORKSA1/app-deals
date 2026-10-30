@@ -1,0 +1,47 @@
+---
+layout: "default"
+title: "Support App.Deals: Keep Independent Deal Research Free"
+description: "Help keep App.Deals free and independent. One-time or monthly support funds research, new tools, contest prizes, promotion and hiring writers and creators."
+canon: "support.html"
+base: ""
+---
+<div class="wrap page-head">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Support</span></nav>
+ <h1>Keep App.Deals free and independent</h1>
+ <p class="lede">No paywall, no account needed, and no sponsor deciding our verdicts. Reader support pays for research time, new calculators, contest prizes and the people who keep listings current.</p>
+</div>
+<section class="wrap grid g2" style="align-items:start;gap:28px;padding-bottom:30px">
+ <div class="card">
+  <h2 style="font-size:1.45rem">Choose your support</h2>
+  <div class="tiers" style="margin:14px 0">
+   <button type="button" class="tier" data-amount="5" aria-pressed="false"><span>Coffee</span><strong>$5</strong><small>One hour of listing checks</small></button>
+   <button type="button" class="tier" data-amount="25" aria-pressed="true"><span>Supporter</span><strong>$25</strong><small>Funds a new guide</small></button>
+   <button type="button" class="tier" data-amount="100" aria-pressed="false"><span>Patron</span><strong>$100</strong><small>Funds a monthly contest prize</small></button>
+   <button type="button" class="tier" data-amount="500" aria-pressed="false"><span>Builder</span><strong>$500</strong><small>Funds a new free tool</small></button>
+  </div>
+  <div id="pay-links" style="display:flex;gap:10px;flex-wrap:wrap"></div>
+  <p class="form-note" id="pay-note" hidden>Payments are processed securely by the payment provider. App.Deals never sees your card details.</p>
+  <form class="form" data-form="Support pledge" data-redirect="thank-you.html" style="margin-top:14px">
+   <div class="hp"><label>Leave empty<input name="_hp" tabindex="-1" autocomplete="off"></label></div>
+   <p style="margin:0">Pledge your support and we'll reply with a secure payment link and a receipt.</p>
+   <div class="row"><div><label for="amount">Amount (USD)</label><input id="amount" name="amount" type="number" min="1" value="25" required></div>
+   <div><label for="s-freq">Frequency</label><select id="s-freq" name="frequency"><option>One-time</option><option>Monthly</option><option>Yearly</option></select></div></div>
+   <div><label for="s-purpose">Put it towards</label><select id="s-purpose" name="purpose"><option>Wherever it's needed most</option><option>Ongoing operations and hosting</option><option>Research and listing updates</option><option>New free tools</option><option>Contest prizes</option><option>Promotion and marketing</option><option>Hiring writers and video creators</option></select></div>
+   <div class="row"><div><label for="s-name">Name</label><input id="s-name" name="name" required autocomplete="name"></div><div><label for="s-email">Email</label><input id="s-email" name="email" type="email" required autocomplete="email"></div></div>
+   <label class="check"><input type="checkbox" name="public_thanks" value="yes"> Thank me by name in our supporters list</label>
+   <button class="btn primary" type="submit">Pledge my support</button><p class="form-status" aria-live="polite"></p>
+  </form>
+ </div>
+ <div>
+  <h2 style="font-size:1.45rem">Where the money goes</h2>
+  <div class="card" style="padding:6px 18px;margin-bottom:18px">
+   <div class="kv" style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)"><span>Research and keeping listings current</span><b>35%</b></div>
+   <div class="kv" style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)"><span>New tools and site operations</span><b>25%</b></div>
+   <div class="kv" style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)"><span>Writers, video creators and moderators</span><b>20%</b></div>
+   <div class="kv" style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)"><span>Contest prizes</span><b>10%</b></div>
+   <div class="kv" style="display:flex;justify-content:space-between;padding:10px 0"><span>Promotion and outreach</span><b>10%</b></div>
+  </div>
+  <div class="card"><h3>Other ways to help</h3><ul style="padding-left:1.1em;margin:0"><li>Share a useful <a href="guides.html">guide</a> or <a href="tools.html">tool</a></li><li>Send us a <a href="deals.html">deal tip</a> or report an outdated listing</li><li>Sponsor a contest prize: see <a href="advertise.html">sponsorship</a></li><li>Write or film for us: see <a href="careers.html">open roles</a></li></ul></div>
+  <p class="form-note" style="margin-top:14px">App.Deals is an independent website, not a registered charity. Contributions are not tax-deductible and do not buy editorial influence.</p>
+ </div>
+</section>

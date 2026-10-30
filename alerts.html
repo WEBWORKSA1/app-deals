@@ -1,0 +1,92 @@
+---
+layout: "default"
+title: "Free App & Software Deal Alerts by Email | App.Deals"
+description: "Get email alerts for the app and software deals you care about: choose platforms, categories, budget and frequency. Free, independent, unsubscribe any time."
+canon: "alerts.html"
+base: ""
+---
+<div class="wrap page-head">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Deal alerts</span></nav>
+ <h1>Deal alerts, tuned to you</h1>
+ <p class="lede">Three short steps. Tell us what you use and what you're shopping for, and we'll email you only when a genuine discount, new perk or seasonal sale matches.</p>
+</div>
+<section class="wrap grid g2" style="align-items:start;gap:28px;padding-bottom:30px">
+ <div class="card">
+  <form class="form" data-form="Deal alerts signup" data-steps data-redirect="thank-you.html">
+   <div class="hp"><label>Leave empty<input name="_hp" tabindex="-1" autocomplete="off"></label></div>
+   <div class="steps-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+   <div class="step">
+    <h2 style="font-size:1.35rem">1. What do you use?</h2>
+    <div><label>Platforms</label><div class="opts" data-need-one>
+     <label><input type="checkbox" name="platforms" value="iPhone/iPad"> iPhone/iPad</label>
+     <label><input type="checkbox" name="platforms" value="Android"> Android</label>
+     <label><input type="checkbox" name="platforms" value="Mac"> Mac</label>
+     <label><input type="checkbox" name="platforms" value="Windows"> Windows</label>
+     <label><input type="checkbox" name="platforms" value="Linux"> Linux</label>
+     <label><input type="checkbox" name="platforms" value="Web/SaaS"> Web &amp; SaaS</label>
+     <label><input type="checkbox" name="platforms" value="PC games"> PC games</label>
+     <label><input type="checkbox" name="platforms" value="Console games"> Console games</label>
+    </div></div>
+    <div><label>Categories</label><div class="opts">
+     <label><input type="checkbox" name="categories" value="Productivity"> Productivity</label>
+     <label><input type="checkbox" name="categories" value="Developer tools"> Developer tools</label>
+     <label><input type="checkbox" name="categories" value="Design & creative"> Design &amp; creative</label>
+     <label><input type="checkbox" name="categories" value="Photo & video"> Photo &amp; video</label>
+     <label><input type="checkbox" name="categories" value="Security & VPN"> Security &amp; VPN</label>
+     <label><input type="checkbox" name="categories" value="Business & marketing"> Business &amp; marketing</label>
+     <label><input type="checkbox" name="categories" value="AI tools"> AI tools</label>
+     <label><input type="checkbox" name="categories" value="Education"> Education</label>
+     <label><input type="checkbox" name="categories" value="Games"> Games</label>
+     <label><input type="checkbox" name="categories" value="Music & audio"> Music &amp; audio</label>
+    </div></div>
+    <div class="step-nav"><span></span><button class="btn primary" type="button" data-next>Next</button></div>
+   </div>
+   <div class="step" hidden>
+    <h2 style="font-size:1.35rem">2. What counts as a deal for you?</h2>
+    <div><label>Deal types</label><div class="opts">
+     <label><input type="checkbox" name="deal_types" value="Free for a limited time" checked> Free for a limited time</label>
+     <label><input type="checkbox" name="deal_types" value="Price drops" checked> Price drops</label>
+     <label><input type="checkbox" name="deal_types" value="Lifetime deals"> Lifetime deals</label>
+     <label><input type="checkbox" name="deal_types" value="New perks programmes"> New perks programmes</label>
+     <label><input type="checkbox" name="deal_types" value="Seasonal sale reminders" checked> Seasonal sale reminders</label>
+    </div></div>
+    <div class="row">
+     <div><label for="al-who">I am</label><select id="al-who" name="audience"><option>Just me / household</option><option>Student</option><option>Teacher or educator</option><option>Startup founder or team</option><option>Nonprofit</option><option>Small business</option><option>App developer</option></select></div>
+     <div><label for="al-budget">Typical budget per purchase</label><select id="al-budget" name="budget"><option>Free only</option><option>Under $10</option><option>Under $50</option><option>Under $200</option><option>Any price if the deal is great</option></select></div>
+    </div>
+    <div><label for="al-freq">How often?</label><select id="al-freq" name="frequency"><option>Weekly digest</option><option>As soon as something matches</option><option>Monthly round-up</option><option>Only big seasonal sales</option></select></div>
+    <div><label for="al-apps">Specific apps you're waiting to buy (optional)</label><textarea id="al-apps" name="wanted_apps" placeholder="One per line, with the price you'd pay"></textarea></div>
+    <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn primary" type="button" data-next>Next</button></div>
+   </div>
+   <div class="step" hidden>
+    <h2 style="font-size:1.35rem">3. Where should we send them?</h2>
+    <div class="row">
+     <div><label for="al-name">First name</label><input id="al-name" name="name" autocomplete="given-name" required></div>
+     <div><label for="al-country">Country</label><input id="al-country" name="country" autocomplete="country-name" placeholder="Prices vary by region"></div>
+    </div>
+    <div><label for="al-email">Email</label><input id="al-email" name="email" type="email" autocomplete="email" required></div>
+    <label class="check"><input type="checkbox" name="consent" value="yes" required> I agree to receive deal alert emails from App.Deals. I can unsubscribe at any time. I've read the <a href="privacy.html">privacy policy</a>.</label>
+    <label class="check"><input type="checkbox" name="contests" value="yes"> Also tell me about contests and giveaways.</label>
+    <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn primary" type="submit">Start my alerts</button></div>
+   </div>
+   <p class="form-status" aria-live="polite"></p>
+  </form>
+ </div>
+ <div>
+  <div class="card" style="margin-bottom:16px">
+   <h2 style="font-size:1.35rem">What you'll get</h2>
+   <ul style="padding-left:1.1em">
+    <li><strong>Only matches.</strong> Your platforms, your categories, your budget.</li>
+    <li><strong>Checked offers.</strong> We look at the vendor's normal price and renewal terms before we send anything.</li>
+    <li><strong>Seasonal heads-ups.</strong> A reminder before Black Friday, Steam seasonal sales and back-to-school pricing.</li>
+    <li><strong>New perks.</strong> When a student, startup or nonprofit programme launches or changes.</li>
+   </ul>
+  </div>
+  <div class="notice g">We never sell or rent your email address. Sponsored offers in alerts are always labelled. Every email has a one-click way to stop.</div>
+  <div class="faq" style="margin-top:16px">
+   <details><summary>How much does it cost?</summary><p>Nothing. Deal alerts are free.</p></details>
+   <details><summary>Can I change my preferences later?</summary><p>Yes. Reply to any alert or use the <a href="contact.html">contact form</a> and we'll update them.</p></details>
+   <details><summary>Will you sell my data?</summary><p>No. Your details are used only to send the alerts you asked for. See the <a href="privacy.html">privacy policy</a>.</p></details>
+  </div>
+ </div>
+</section>

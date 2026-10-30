@@ -1,0 +1,70 @@
+---
+layout: "default"
+title: "Submit Your App or SaaS Deal for Free Listing | App.Deals"
+description: "App and SaaS makers: submit a launch discount, price drop, free-for-a-limited-time promotion or perks programme. Free editorial review, plus optional featured placement."
+canon: "submit-deal.html"
+base: ""
+---
+<div class="wrap page-head">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>For developers</span></nav>
+ <span class="eyebrow">For app &amp; SaaS makers</span>
+ <h1>Submit your app deal</h1>
+ <p class="lede">Reach people who come to App.Deals specifically to find apps worth paying for. Editorial listings are free and reviewed by a person. Paid add-ons get you guaranteed visibility, and they are always labelled.</p>
+</div>
+<section class="wrap grid" style="grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px;align-items:start;padding-bottom:30px">
+ <div class="card">
+  <form class="form" data-form="Developer deal submission" data-steps data-redirect="thank-you.html">
+   <div class="hp"><label>Leave empty<input name="_hp" tabindex="-1" autocomplete="off"></label></div>
+   <div class="steps-bar" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+   <div class="step">
+    <h2 style="font-size:1.35rem">1. Your product</h2>
+    <div class="row"><div><label for="sd-app">App or product name</label><input id="sd-app" name="product" required></div><div><label for="sd-url">Website or store link</label><input id="sd-url" name="product_url" type="url" required placeholder="https://"></div></div>
+    <div><label>Platforms</label><div class="opts" data-need-one>
+     <label><input type="checkbox" name="platforms" value="iOS"> iOS / iPadOS</label><label><input type="checkbox" name="platforms" value="Android"> Android</label><label><input type="checkbox" name="platforms" value="macOS"> macOS</label><label><input type="checkbox" name="platforms" value="Windows"> Windows</label><label><input type="checkbox" name="platforms" value="Linux"> Linux</label><label><input type="checkbox" name="platforms" value="Web/SaaS"> Web / SaaS</label><label><input type="checkbox" name="platforms" value="Games"> Game</label>
+    </div></div>
+    <div><label for="sd-cat">Category</label><select id="sd-cat" name="category"><option>Productivity</option><option>Developer tools</option><option>Design &amp; creative</option><option>Photo &amp; video</option><option>AI tools</option><option>Business &amp; marketing</option><option>Security &amp; privacy</option><option>Education</option><option>Health &amp; fitness</option><option>Finance</option><option>Games</option><option>Utilities</option><option>Other</option></select></div>
+    <div><label for="sd-desc">What does it do, and who is it for? (2–3 sentences)</label><textarea id="sd-desc" name="description" required></textarea></div>
+    <div class="step-nav"><span></span><button class="btn primary" type="button" data-next>Next: the deal</button></div>
+   </div>
+   <div class="step" hidden>
+    <h2 style="font-size:1.35rem">2. The deal</h2>
+    <div><label for="sd-type">Deal type</label><select id="sd-type" name="deal_type"><option>Launch discount</option><option>Temporary price drop</option><option>Free for a limited time</option><option>Extended free trial</option><option>Lifetime deal</option><option>Student / educator programme</option><option>Startup programme</option><option>Nonprofit programme</option><option>Exclusive coupon for App.Deals readers</option></select></div>
+    <div class="row"><div><label for="sd-reg">Regular price</label><input id="sd-reg" name="regular_price" required placeholder="e.g. $12/month or $49 one-time"></div><div><label for="sd-deal">Deal price</label><input id="sd-deal" name="deal_price" required placeholder="e.g. $6/month for 12 months"></div></div>
+    <div class="row"><div><label for="sd-start">Starts</label><input id="sd-start" name="start_date" type="date" required></div><div><label for="sd-end">Ends</label><input id="sd-end" name="end_date" type="date"></div></div>
+    <div class="row"><div><label for="sd-code">Coupon code (if any)</label><input id="sd-code" name="coupon_code"></div><div><label for="sd-region">Regions</label><input id="sd-region" name="regions" placeholder="Worldwide, US only…"></div></div>
+    <div><label for="sd-terms">Key terms and limits</label><textarea id="sd-terms" name="terms" placeholder="Renewal price, usage limits, refund window, eligibility"></textarea></div>
+    <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn primary" type="button" data-next>Next: visibility</button></div>
+   </div>
+   <div class="step" hidden>
+    <h2 style="font-size:1.35rem">3. Visibility (optional)</h2>
+    <p class="small muted" style="margin:0">Editorial review is free. Add-ons are paid, labelled as sponsored, and confirmed with you before anything is charged.</p>
+    <div class="opts" style="flex-direction:column;align-items:stretch">
+     <label><input type="checkbox" name="addons" value="Free editorial review only" checked> Free editorial review only</label>
+     <label><input type="checkbox" name="addons" value="Featured listing"> Featured listing at the top of a category</label>
+     <label><input type="checkbox" name="addons" value="Newsletter slot"> Sponsored slot in the deal alerts email</label>
+     <label><input type="checkbox" name="addons" value="Video walkthrough"> Video walkthrough for our library</label>
+     <label><input type="checkbox" name="addons" value="Category sponsorship"> Monthly category sponsorship</label>
+     <label><input type="checkbox" name="addons" value="Contest prize sponsorship"> Sponsor licences as contest prizes</label>
+    </div>
+    <div><label for="sd-budget">Promotion budget</label><select id="sd-budget" name="budget"><option>No paid promotion</option><option>Under $100</option><option>$100–$500</option><option>$500–$2,000</option><option>$2,000+</option></select></div>
+    <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn primary" type="button" data-next>Next: contact</button></div>
+   </div>
+   <div class="step" hidden>
+    <h2 style="font-size:1.35rem">4. Who should we talk to?</h2>
+    <div class="row"><div><label for="sd-name">Your name</label><input id="sd-name" name="name" required autocomplete="name"></div><div><label for="sd-role">Role</label><input id="sd-role" name="role" placeholder="Founder, marketing lead…"></div></div>
+    <div class="row"><div><label for="sd-co">Company</label><input id="sd-co" name="company" autocomplete="organization"></div><div><label for="sd-email">Work email</label><input id="sd-email" name="email" type="email" required autocomplete="email"></div></div>
+    <label class="check"><input type="checkbox" name="authorised" value="yes" required> I'm authorised to offer this deal, and the details are accurate.</label>
+    <label class="check"><input type="checkbox" name="consent" value="yes" required> I agree that App.Deals may contact me about this submission. I've read the <a href="privacy.html">privacy policy</a> and <a href="editorial-policy.html">editorial policy</a>.</label>
+    <div class="step-nav"><button class="btn ghost" type="button" data-prev>Back</button><button class="btn primary" type="submit">Submit my deal</button></div>
+   </div>
+   <p class="form-status" aria-live="polite"></p>
+  </form>
+ </div>
+ <aside style="display:grid;gap:16px">
+  <div class="card"><h3>What we list</h3><ul style="padding-left:1.1em;margin:0" class="small"><li>Genuine discounts against a published regular price</li><li>Free-for-a-limited-time promotions on paid apps</li><li>Student, educator, startup and nonprofit programmes</li><li>Lifetime deals with clear limits and a refund window</li></ul></div>
+  <div class="card"><h3>What we decline</h3><ul style="padding-left:1.1em;margin:0" class="small"><li>Inflated "was" prices or resetting countdown timers</li><li>Unofficial keys or unauthorised resellers</li><li>Apps that collect excessive data or mislead users</li><li>Anything that breaks app store or advertising policies</li></ul></div>
+  <div class="card"><h3>What happens next</h3><ol style="padding-left:1.2em;margin:0" class="small"><li>An editor reviews your submission, usually within 3 business days.</li><li>We may ask questions or test the product.</li><li>Accepted deals are published with honest copy and your official link.</li><li>Paid add-ons are confirmed in writing before any invoice.</li></ol></div>
+  <div class="notice v small">Paying for placement never changes our editorial verdict. Read the <a href="guides/launch-an-app-deal.html">guide to launching an app deal</a> for tips that make offers convert.</div>
+ </aside>
+</section>
+<style>@media (max-width:900px){section.wrap.grid{grid-template-columns:1fr!important}}</style>

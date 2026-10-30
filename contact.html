@@ -1,0 +1,28 @@
+---
+layout: "default"
+title: "Contact App.Deals"
+description: "Contact App.Deals with questions, corrections, deal tips, press, sponsorship or partnership inquiries. We reply within two business days."
+canon: "contact.html"
+base: ""
+---
+<div class="wrap page-head">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Contact</span></nav>
+ <h1>Contact</h1>
+ <p class="lede">Questions, corrections, deal tips or press: send a message and we'll reply within two business days.</p>
+</div>
+<section class="wrap grid g2" style="align-items:start;gap:28px;padding-bottom:30px">
+ <div class="card">
+  <form class="form" data-form="Contact message" data-redirect="thank-you.html">
+   <div class="hp"><label>Leave empty<input name="_hp" tabindex="-1" autocomplete="off"></label></div>
+   <div class="row"><div><label for="ct-name">Name</label><input id="ct-name" name="name" required autocomplete="name"></div><div><label for="ct-email">Email</label><input id="ct-email" name="email" type="email" required autocomplete="email"></div></div>
+   <div><label for="ct-topic">Topic</label><select id="ct-topic" name="topic"><option>General question</option><option>Correction or outdated listing</option><option>Deal tip</option><option>Deal alert preferences or unsubscribe</option><option>Privacy request</option><option>Press</option><option>Advertising, sponsorship or partnership</option><option>Website or domain inquiry</option></select></div>
+   <div><label for="ct-msg">Message</label><textarea id="ct-msg" name="message" required></textarea></div>
+   <label class="check"><input type="checkbox" name="consent" value="yes" required> I agree that App.Deals may use these details to reply. <a href="privacy.html">Privacy policy</a>.</label>
+   <button class="btn primary" type="submit">Send message</button><p class="form-status" aria-live="polite"></p>
+  </form>
+ </div>
+ <div>
+  <div class="card" style="margin-bottom:16px;border-color:var(--brand)"><h3>Website, domain, sponsorship or partnership</h3><p class="small muted">For interest in this website, the App.Deals domain name, sponsorship, advertising or partnership, contact the owner directly.</p><a class="btn primary" href="https://web.works/contact" target="_blank" rel="noopener">Contact the owner</a></div>
+  <div class="card"><h3>Quick links</h3><ul style="padding-left:1.1em;margin:0"><li><a href="submit-deal.html">Submit an app deal</a></li><li><a href="advertise.html">Advertising and sponsorship</a></li><li><a href="alerts.html">Deal alerts</a></li><li><a href="careers.html">Work with us</a></li><li><a href="support.html">Support the site</a></li></ul></div>
+ </div>
+</section>

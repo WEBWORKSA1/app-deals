@@ -1,0 +1,35 @@
+---
+layout: "default"
+title: "Annual vs Monthly Subscription Calculator | App.Deals"
+description: "Should you pay yearly or monthly? Find the break-even month, the real annual saving and the expected cost of each option based on how likely you are to keep using the app."
+canon: "tools/annual-vs-monthly.html"
+base: "../"
+scripts: "<script src=\"../assets/js/tools.js\"></script>"
+---
+<div class="wrap page-head">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../tools.html">Tools</a> / <span>Annual vs monthly</span></nav>
+ <h1>Annual vs monthly calculator</h1>
+ <p class="lede">The annual discount is a bet that you'll still be using the app in a year. Put a number on that bet.</p>
+</div>
+<section class="wrap tool" style="padding-bottom:30px">
+ <div class="card form">
+  <div class="row"><div><label for="am-monthly">Monthly price ($)</label><input id="am-monthly" type="number" min="0" step="0.01" value="12"></div><div><label for="am-annual">Annual price ($)</label><input id="am-annual" type="number" min="0" step="0.01" value="99"></div></div>
+  <div><label for="am-prob">Chance you're still using it in 12 months: <b id="am-prob-out">70%</b></label><input id="am-prob" type="range" min="0" max="100" step="5" value="70"></div>
+  <div><label for="am-quit">If you stop, after how many months?</label><input id="am-quit" type="number" min="0" max="12" step="1" value="3"></div>
+ </div>
+ <div class="result" aria-live="polite">
+  <h3>Break-even month</h3>
+  <div class="big" id="am-be">--</div>
+  <div class="kv" style="margin-top:12px"><span>Saving if you stay 12 months</span><b id="am-save">--</b></div>
+  <div class="kv"><span>Expected cost paying monthly</span><b id="am-expm">--</b></div>
+  <div class="kv"><span>Cost paying annually</span><b id="am-expa">--</b></div>
+  <p id="am-verdict" style="margin-top:12px;font-weight:700;color:#fff"></p>
+ </div>
+</section>
+<section class="section alt">
+ <div class="narrow article">
+  <h2>How to use the result</h2>
+  <p>The expected monthly cost assumes that if you stop using the app, you stop paying after the number of months you entered. If that expected cost is higher than the annual price, annual is the better bet. If it is lower, start monthly. You can almost always switch to annual later once the app has earned its place.</p>
+  <p>Be honest with the slider. New fitness, language and productivity apps are often abandoned within a few months, while tools you use for work every day are much safer bets. Read the full guide: <a href="../guides/annual-vs-monthly-billing.html">annual vs monthly billing</a>.</p>
+ </div>
+</section>

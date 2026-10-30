@@ -1,0 +1,19 @@
+---
+layout: "default"
+title: "Search App.Deals: Deals, Perks, Free Alternatives and Guides"
+description: "Search every deal, perk programme, free software alternative, guide, tool and sale date on App.Deals."
+canon: "search.html"
+base: ""
+scripts: "<script src=\"assets/js/search-index.js\"></script>"
+---
+<div class="wrap page-head">
+ <h1>Search App.Deals</h1>
+ <form class="searchbar" role="search" onsubmit="return false" style="max-width:none">
+  <label class="sr" for="search-input">Search</label>
+  <input id="search-input" type="search" placeholder="Search deals, perks, free alternatives, guides…" autofocus>
+ </form>
+ <div class="chips" style="margin-bottom:10px">
+  <a class="chip" href="search.html?q=students">students</a><a class="chip" href="search.html?q=cloud">cloud</a><a class="chip" href="search.html?q=video">video</a><a class="chip" href="search.html?q=password">password</a><a class="chip" href="search.html?q=black+friday">black friday</a><a class="chip" href="search.html?q=nonprofit">nonprofit</a>
+ </div>
+</div>
+<section class="wrap" style="padding-bottom:40px"><div class="grid g3" id="search-results" aria-live="polite"></div></section>

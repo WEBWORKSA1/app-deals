@@ -1,0 +1,43 @@
+---
+layout: "default"
+title: "Perk Finder: Software Perks You Qualify For | App.Deals"
+description: "Answer two questions and see the student, teacher, startup, nonprofit and everyday software programmes you can claim, with links to eligibility and official pages."
+canon: "tools/perk-finder.html"
+base: "../"
+scripts: "<script src=\"../assets/js/deals-data.js\"></script><script src=\"../assets/js/tools.js\"></script>"
+---
+<div class="wrap page-head">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../tools.html">Tools</a> / <span>Perk finder</span></nav>
+ <h1>Perk finder</h1>
+ <p class="lede">Most people qualify for at least one software programme they have never claimed. Tell us who you are and what you need.</p>
+</div>
+<section class="wrap" style="padding-bottom:30px">
+ <form id="pf-form" class="card form" onsubmit="return false">
+  <div><label>1. I am…</label><div class="opts">
+   <label><input type="radio" name="who" value="students" checked> A student</label>
+   <label><input type="radio" name="who" value="educators"> A teacher or educator</label>
+   <label><input type="radio" name="who" value="startups"> Building a startup</label>
+   <label><input type="radio" name="who" value="nonprofits"> Running a nonprofit</label>
+   <label><input type="radio" name="who" value="everyone"> None of these</label>
+  </div></div>
+  <div><label>2. I need… <span class="muted small">(optional, pick any)</span></label><div class="opts">
+   <label><input type="checkbox" name="need" value="dev"> Developer tools</label>
+   <label><input type="checkbox" name="need" value="cloud"> Cloud &amp; hosting</label>
+   <label><input type="checkbox" name="need" value="design"> Design</label>
+   <label><input type="checkbox" name="need" value="creative"> Creative apps</label>
+   <label><input type="checkbox" name="need" value="productivity"> Office &amp; productivity</label>
+   <label><input type="checkbox" name="need" value="business"> Business tools</label>
+   <label><input type="checkbox" name="need" value="learning"> Learning</label>
+   <label><input type="checkbox" name="need" value="media"> Music, video &amp; books</label>
+   <label><input type="checkbox" name="need" value="games"> Games</label>
+  </div></div>
+ </form>
+ <p class="result-count" id="pf-count" aria-live="polite" style="margin-top:18px"></p>
+ <div class="grid g3" id="pf-out"></div>
+</section>
+<section class="section alt">
+ <div class="narrow article">
+  <h2>Tips for getting approved</h2>
+  <p>Use your school, company or organisation email where possible, upload clear and dated documents, and make sure the name on your account matches. Detailed advice for each group: <a href="../guides/student-software-perks.html">students and teachers</a>, <a href="../guides/startup-credits-playbook.html">startups</a>, and <a href="../guides/nonprofit-software-discounts.html">nonprofits</a>.</p>
+ </div>
+</section>

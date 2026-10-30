@@ -1,0 +1,46 @@
+---
+layout: "default"
+title: "Lifetime Deal Calculator: Is a Lifetime Software Deal Worth It? | App.Deals"
+description: "Free lifetime deal calculator. Find the break-even month against a subscription and a risk-adjusted value that allows for products that change or shut down."
+canon: "tools/lifetime-deal-calculator.html"
+base: "../"
+scripts: "<script src=\"../assets/js/tools.js\"></script>"
+---
+<div class="wrap page-head">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../tools.html">Tools</a> / <span>Lifetime deal calculator</span></nav>
+ <h1>Lifetime deal calculator</h1>
+ <p class="lede">A lifetime deal only pays off if you use the product long enough and the product survives long enough. Enter the numbers to see both.</p>
+</div>
+<section class="wrap tool" style="padding-bottom:30px">
+ <div class="card form">
+  <div><label for="ltd-price">Lifetime deal price ($)</label><input id="ltd-price" type="number" min="0" step="1" value="149"></div>
+  <div><label for="ltd-monthly">Equivalent subscription price per month ($)</label><input id="ltd-monthly" type="number" min="0" step="0.5" value="15"></div>
+  <div><label for="ltd-years">How many years would you use it?</label><input id="ltd-years" type="number" min="1" max="10" step="1" value="3"></div>
+  <div><label for="ltd-risk">Yearly risk the product shuts down or changes your plan: <b id="ltd-risk-out">20%</b></label><input id="ltd-risk" type="range" min="0" max="60" step="5" value="20"></div>
+  <p class="form-note">Rough guide to risk: 5–10% for established products with years of releases, 20–30% for young products, 40%+ for launch-week products that depend on costly AI or messaging services.</p>
+ </div>
+ <div class="result" aria-live="polite">
+  <h3>Break-even</h3>
+  <div class="big" id="ltd-be">--</div>
+  <p style="margin:4px 0 12px">of use before the deal beats paying monthly</p>
+  <div class="kv"><span>Expected months the product lasts (within your horizon)</span><b id="ltd-exp">--</b></div>
+  <div class="kv"><span>Expected subscription cost avoided</span><b id="ltd-value">--</b></div>
+  <div class="kv"><span>Risk-adjusted net saving</span><b id="ltd-net">--</b></div>
+  <div id="ltd-bars" style="margin-top:12px"></div>
+  <p id="ltd-verdict" style="margin-top:12px;font-weight:700;color:#fff"></p>
+ </div>
+</section>
+<section class="section alt">
+ <div class="narrow article">
+  <h2>How the calculation works</h2>
+  <p>The break-even month is simply the lifetime price divided by the monthly price. The risk-adjusted figures assume that each year there is a chance, which you choose, that the product shuts down or that your lifetime plan is changed. The expected months of use add up the months in each year, weighted by the chance the product is still running that year. Multiply by the monthly price and you have the subscription cost the deal is really expected to save you.</p>
+  <p>For example, a $149 deal on a tool that costs $15 per month breaks even after about 10 months. Over three years with a 20% yearly risk, the expected months of use are about 29, worth roughly $439 of subscription, a risk-adjusted saving of about $290.</p>
+  <h2>Before you buy</h2>
+  <ul>
+   <li>Check the plan limits (seats, projects, usage credits) against your real needs.</li>
+   <li>Put the refund deadline in your calendar and test properly before it passes.</li>
+   <li>Make sure you can export your data.</li>
+  </ul>
+  <p>Read the full <a href="../guides/lifetime-deals-checklist.html">lifetime deals buyer's checklist</a>, then score the offer with the <a href="deal-checker.html">deal checker</a>.</p>
+ </div>
+</section>

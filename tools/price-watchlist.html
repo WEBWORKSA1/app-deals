@@ -1,0 +1,42 @@
+---
+layout: "default"
+title: "App Price Watchlist: Track Target Prices for Apps | App.Deals"
+description: "Keep a private watchlist of apps and software you want, with the price you're willing to pay. Stored in your browser, exportable, with optional email alerts."
+canon: "tools/price-watchlist.html"
+base: "../"
+scripts: "<script src=\"../assets/js/tools.js\"></script>"
+---
+<div class="wrap page-head">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../tools.html">Tools</a> / <span>Price watchlist</span></nav>
+ <h1>Price watchlist</h1>
+ <p class="lede">Write down what you want and what you're willing to pay, before a sale tells you what to want. Your watchlist is saved privately in this browser (<span id="wl-count">0</span> items).</p>
+</div>
+<section class="wrap tool" style="padding-bottom:30px">
+ <div>
+  <form id="wl-form" class="card form">
+   <div><label for="wl-name">App or software</label><input id="wl-name" required placeholder="e.g. a photo editor or a game"></div>
+   <div><label for="wl-url">Link to check the price (optional)</label><input id="wl-url" placeholder="https://"></div>
+   <div class="row"><div><label for="wl-cur">Current price ($)</label><input id="wl-cur" type="number" min="0" step="0.01" required></div><div><label for="wl-target">My target price ($)</label><input id="wl-target" type="number" min="0" step="0.01" required></div></div>
+   <div><label for="wl-plat">Platform</label><select id="wl-plat"><option>Any platform</option><option>iPhone/iPad</option><option>Android</option><option>Mac</option><option>Windows</option><option>Web/SaaS</option><option>Steam/PC games</option><option>Console</option></select></div>
+   <button class="btn primary" type="submit">Add to watchlist</button>
+   <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn ghost sm" type="button" id="wl-export">Export</button><label class="btn ghost sm" style="margin:0">Import<input id="wl-import" type="file" accept="application/json" hidden></label></div>
+  </form>
+  <div class="card" style="margin-top:16px">
+   <h3>Want an email when prices drop?</h3>
+   <p class="small muted">Send your watchlist to our deal desk. When we spot one of your items at or below your target in a public sale, we'll email you.</p>
+   <form id="wl-alert" class="form" data-form="Watchlist alert request" data-ok="Done. We'll email you when we spot a match.">
+    <div class="hp"><label>Leave empty<input name="_hp" tabindex="-1" autocomplete="off"></label></div>
+    <div><label for="wl-email">Email</label><input id="wl-email" name="email" type="email" required autocomplete="email"></div>
+    <label class="check"><input type="checkbox" name="consent" value="yes" required> Email me about my watchlist items. I've read the <a href="../privacy.html">privacy policy</a>.</label>
+    <button class="btn dark" type="submit">Send my watchlist</button><p class="form-status" aria-live="polite"></p>
+   </form>
+  </div>
+ </div>
+ <div id="wl-list" class="grid" style="gap:12px"></div>
+</section>
+<section class="section alt">
+ <div class="narrow article">
+  <h2>How to set a good target price</h2>
+  <p>Look at the vendor's own pricing page and note the normal price. For games, price-history sites show previous lows; a target near the last seasonal low is realistic. For software, a target 20–40% below normal is typical during big sales such as Black Friday. Check the <a href="../calendar.html">sale calendar</a> for when those sales usually happen.</p>
+ </div>
+</section>

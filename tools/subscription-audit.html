@@ -1,0 +1,51 @@
+---
+layout: "default"
+title: "Subscription Audit Calculator: What Do Your Subscriptions Cost per Year? | App.Deals"
+description: "Free subscription audit tool. List your app and streaming subscriptions, convert weekly, monthly and quarterly bills to yearly totals, and find the ones you barely use."
+canon: "tools/subscription-audit.html"
+base: "../"
+scripts: "<script src=\"../assets/js/tools.js\"></script>"
+---
+<div class="wrap page-head">
+ <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../tools.html">Tools</a> / <span>Subscription audit</span></nav>
+ <h1>Subscription audit</h1>
+ <p class="lede">Add every recurring charge from your card statements. The audit converts each one to a yearly cost and shows how much you spend on subscriptions you rarely use. Your list is saved only in this browser.</p>
+</div>
+<section class="wrap tool" style="padding-bottom:30px">
+ <div class="card">
+  <table class="rows">
+   <thead><tr><th>Subscription</th><th>Price</th><th>Billed</th><th>I use it</th><th></th></tr></thead>
+   <tbody id="sa-rows"></tbody>
+  </table>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+   <button class="btn primary sm" type="button" id="sa-add">+ Add subscription</button>
+   <button class="btn ghost sm" type="button" id="sa-sample">Load example</button>
+   <button class="btn ghost sm" type="button" id="sa-csv">Export CSV</button>
+   <button class="btn ghost sm" type="button" id="sa-clear">Clear all</button>
+  </div>
+ </div>
+ <div class="result" aria-live="polite">
+  <h3>Your subscriptions cost</h3>
+  <div class="big" id="sa-year">$0.00</div><p style="margin:4px 0 12px">per year across <span id="sa-count">0</span> subscriptions</p>
+  <div class="kv"><span>Per month</span><b id="sa-month">$0.00</b></div>
+  <div class="kv"><span>Over five years</span><b id="sa-five">$0.00</b></div>
+  <div class="kv"><span>Spent on "rarely used"</span><b id="sa-rare">$0.00</b></div>
+  <div class="bar" aria-hidden="true"><i id="sa-bar" style="width:0"></i></div>
+  <h3 style="margin-top:16px;font-size:1rem">Most expensive</h3>
+  <div id="sa-top"></div>
+ </div>
+</section>
+<section class="section alt">
+ <div class="narrow article">
+  <h2>How to run a good audit</h2>
+  <ol>
+   <li><strong>Collect three months of statements.</strong> Some subscriptions bill quarterly or yearly, so one month will miss them.</li>
+   <li><strong>Search for the usual billers</strong>: app stores, streaming services, software companies, and anything labelled "subscription", "membership" or "renewal".</li>
+   <li><strong>Be honest about use.</strong> "Rarely" means you could not name the last time you opened it.</li>
+   <li><strong>Act on the rarely used ones first.</strong> Cancel, downgrade, or switch to a family plan or a free alternative.</li>
+  </ol>
+  <p>Not sure how to cancel? Follow our step-by-step guide to <a href="../guides/cancel-app-subscriptions.html">cancelling app subscriptions on iPhone, Android and the web</a>. Sharing with family? Check the <a href="family-plan-splitter.html">family plan splitter</a>. Looking for a free replacement? Browse <a href="../alternatives.html">free alternatives</a>.</p>
+  <h2>Privacy</h2>
+  <p>The audit runs entirely in your browser. Nothing you type is sent to App.Deals. The list is stored in your browser's local storage so it is still here next time; use "Clear all" to remove it.</p>
+ </div>
+</section>
